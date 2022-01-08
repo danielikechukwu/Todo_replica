@@ -7,8 +7,10 @@ import './App.css';
 
 const App = () => {
   const [courseGoals, setCourseGoals] = useState([
+
     { text: 'Do all exercises!', id: 'g1' },
     { text: 'Finish the course!', id: 'g2' }
+    
   ]);
 
   const addGoalHandler = enteredText => {
@@ -19,12 +21,7 @@ const App = () => {
     });
   };
 
-  // const deleteItemHandler = goalId => {
-  //   setCourseGoals(prevGoals => {
-  //     const updatedGoals = prevGoals.filter(goal => goal.id !== goalId);
-  //     return updatedGoals;
-  //   });
-  // };
+  
 
   function deleteItemHandler(goalId){
 

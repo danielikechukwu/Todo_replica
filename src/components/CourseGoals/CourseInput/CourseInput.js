@@ -17,12 +17,10 @@ const CourseInput = props => {
 
      
     setEnteredValue(event.target.value);
-    // console.log(event.target.value);
     
   };
 
   const formSubmitHandler = event => {
-    // event.preventDefault();
     event.preventDefault();
     if(enteredValue.trim().length === 0) {
       setIsValid(false);
